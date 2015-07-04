@@ -22,8 +22,10 @@
  '(setq-default tab-width t)
  '(show-paren-mode 1)
  '(tool-bar-mode nil)
- '(add-to-list 'auto-mode-alist '("\\.js\\'" . js2-mode))
- '(setq ns-right-alternate-modifier nil)
+ '(add-to-list 'auto-mode-alist '("\\.js\\'" . js2-mode))  ;; associate js2-mode to js files
+ '(ns-right-alternate-modifier 'none)                      ;; unset right alt key as meta
+ '(setq make-backup-files nil)                             ;; don't save '~' files
+ '(setq auto-save-default nil)                             ;; don't save '#files#' files
  )
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
