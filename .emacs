@@ -21,7 +21,10 @@
  '(setq show-paren-style t)
  '(setq-default tab-width t)
  '(show-paren-mode 1)
- '(tool-bar-mode nil))
+ '(tool-bar-mode nil)
+ '(add-to-list 'auto-mode-alist '("\\.js\\'" . js2-mode))
+ '(setq ns-right-alternate-modifier nil)
+ )
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
